@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinema Bilet Rezervasyon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img id="filmGorseli" src="img/img1.jpg" alt="" />
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat reserved"></div>
+        <div class="seat reserved"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat reserved"></div>
+        <div class="seat reserved"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <div class="movie-list">
+      <select id="movie" onchange="filmSecildi()">
+        <option disabled>Film Seciniz</option>
+        <option value="20">Le Ballon Rouge</option>
+        <option value="22">Kis Uykusu</option>
+        <option value="25">Past Lives</option>
+      </select>
+    </div>
+
+    <ul class="info">
+      <li>
+        <div class="seat selected"></div>
+        <small>Secili</small>
+      </li>
+      <li>
+        <div class="seat"></div>
+        <small>Bos</small>
+      </li>
+      <li>
+        <div class="seat reserved"></div>
+        <small>Dolu</small>
+      </li>
+    </ul>
+
+    <p class="text">
+      <span id="count">3 </span> Adet koltuk icin hesaplanan ucret
+      <span id="amount">10 </span> TL.
+    </p>
+
+    <script src="scrip.js"></script>
+  </body>
+</html>
